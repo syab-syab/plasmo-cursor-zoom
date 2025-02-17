@@ -1,24 +1,17 @@
-import { useState } from "react"
 
 function IndexPopup() {
-  const [data, setData] = useState("")
 
   return (
     <div
       style={{
-        padding: 16
+        padding: 16,
+        width: "1000vw"
       }}>
       <h2>
-        Welcome to your{" "}
-        <a href="https://www.plasmo.com" target="_blank">
-          Plasmo
-        </a>{" "}
-        Extension!
+        習作：カーソルを合わせたhtmlタグを拡大する(読みやすくする)
+        {/* webページ内に存在するhtmlタグを全て取得し(多分配列になる) */}
+        {/* それら全てにマウスイベントを設定する */}
       </h2>
-      <input onChange={(e) => setData(e.target.value)} value={data} />
-      <a href="https://docs.plasmo.com" target="_blank">
-        View Docs
-      </a>
     </div>
   )
 }
